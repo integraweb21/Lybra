@@ -34,6 +34,14 @@ h2{
     font-size: 36px;
 }
 
+.subtitle{
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0;
+}
+
 .btn-yellow{
     font-family: 'Circular Std Bold';
     color: #fff;
@@ -214,14 +222,6 @@ header nav .nav-contact:hover{
     background-position-x: center;
 }
 
-#bloc-1 .subtitle{
-    font-family: 'Ubuntu', sans-serif;
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    margin: 30px 0;
-}
-
 #bloc-1 h2{
     text-align: center;
     color: #fff;
@@ -263,14 +263,125 @@ header nav .nav-contact:hover{
     margin-bottom: 30px;
 }
 
-/* Offre */
+/* Price */
+
+#price{
+    color: #fff;
+    padding: 80px 0;
+    background-color: #00cc99;
+    position: relative;
+    background-image: url('img/bg-price.png');
+    background-size: cover;
+    background-position-x: center;
+}
+
+#price h2{
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#price h2, #price p{
+    text-align: center;
+}
+
+#price .row{
+    position: relative;
+}
+
+#price .left:after{
+    content: "+";
+    font-size: 28px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-8px, 25px);
+}
+
+#price .right:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 1px;
+    height: 80px;
+    right: 50%;
+    bottom: -40px;
+}
+
+#price .title-list{
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 50px 0 30px;
+}
+
+#price:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url('img/semi-circle-green.png');
+    left: 50%;
+    bottom: -78px;
+    transform: translateX(-50%);
+    width: 275px;
+    height: 80px;
+    z-index: 0;
+}
+
+#price .item{
+    padding: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    color: #262626;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#price .item p.green{
+    color: #00cc99;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#price .item p:last-child{
+    margin-bottom: 0px;
+}
+
+#price .list{
+    padding: 0 100px;
+}
+
+#price li{
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#price li:before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    background-image: url('img/puce.png');
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+}
+
+/* Offer */
 
 #offer{
     overflow: hidden;
 }
 
 #offer .container{
-    padding: 80px 0;
+    padding: 100px 0 80px;
     position: relative;
 }
 
