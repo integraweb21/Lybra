@@ -93,7 +93,7 @@ h2{
 
 /* Semi Circle */
 
-#customers:after, #method:after, #agency:after, #infos-customers:after, #price:after{
+#lybra:after, #customers:after, #method:after, #agency:after, #infos-customers:after, #price:after{
     content: "";
     display: block;
     position: absolute;
@@ -104,7 +104,7 @@ h2{
     height: 80px;
 }
 
-#agency:after{
+#lybra:after, #agency:after{
     background-image: url('img/semi-circle-white.png');
     z-index: 1;
 }
@@ -233,58 +233,86 @@ header nav .nav-contact:hover{
     font-family: 'Circular Std Black';
 }
 
-/* Bloc 1 */
+/* Reasons */
 
-#bloc-1{
+#reasons{
     background-color: #262626;
 }
 
-#bloc-1 .bg{
+#reasons .bg{
     padding: 150px 0;
     background-image: url('img/bg-bloc1.png');
     background-size: cover;
     background-position-x: center;
 }
 
-#bloc-1 h2{
+#reasons h2{
     text-align: center;
     color: #fff;
 }
 
-#bloc-1 h2 span{
+#reasons h2 span{
     color: #00cc99;
 }
 
-#bloc-1 .right .content{
+#reasons .right .content{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-#bloc-1 .right .txt{
+#reasons .right .txt{
     font-family: 'Ubuntu', sans-serif;
     color: #fff;
     font-size: 24px;
     margin: 30px 0;
 }
 
-#bloc-1 .right .txt span{
+#reasons .right .txt span{
     color: #00cc99;
 }
 
-#bloc-1 .item{
+#reasons .item{
     background-color: #fff;
     border-radius: 30px;
     padding: 30px;
 }
 
-#bloc-1 .item:first-child{
+#reasons .item:first-child{
     margin-bottom: 50px;
 }
 
-#bloc-1 .item img{
+#reasons .item img{
     width: 120px;
     margin-bottom: 30px;
+}
+
+/* Lybra */
+
+#lybra{
+    position: relative;
+    padding: 60px 0;
+}
+
+#lybra .line-1, #lybra .line-2, #lybra .line-3{
+    margin: 30px 0;
+}
+
+#lybra .line-1 p, #lybra .line-2 p, #lybra .line-3 p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+
+#lybra p{
+    font-size: 18px;
+    color: rgba(38, 38, 38, 0.5);
+}
+
+#lybra p span{
+    font-family: 'Circular Std Black';
+    color: #00cc99;
 }
 
 /* Method */
