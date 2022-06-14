@@ -33,7 +33,8 @@ li{
 }
 
 h2{
-    font-family: 'Circular Std Black';
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
     color: #262626;
     font-size: 36px;
 }
@@ -92,7 +93,7 @@ h2{
 
 /* Semi Circle */
 
-#customers:after, #agency:after, #infos-customers:after, #price:after{
+#customers:after, #method:after, #agency:after, #infos-customers:after, #price:after{
     content: "";
     display: block;
     position: absolute;
@@ -108,12 +109,12 @@ h2{
     z-index: 1;
 }
 
-#customers:after, #infos-customers:after{
+#method:after, #customers:after, #infos-customers:after{
     background-image: url('img/semi-circle-grey.png');
     z-index: 1;
 }
 
-#price:after {
+#price:after{
     background-image: url('img/semi-circle-green.png');
     z-index: 1;
 }
@@ -163,7 +164,6 @@ header nav .nav-contact:hover{
 }
 
 #banner h1, #offer h2{
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     text-align: center;
     font-size: 60px;
@@ -229,6 +229,10 @@ header nav .nav-contact:hover{
     background-color: #f6f5ef;
 }
 
+#customers h2{
+    font-family: 'Circular Std Black';
+}
+
 /* Bloc 1 */
 
 #bloc-1{
@@ -283,6 +287,57 @@ header nav .nav-contact:hover{
     margin-bottom: 30px;
 }
 
+/* Method */
+
+#method{
+    position: relative;
+    padding: 100px;
+    background-color: #f6f5ef;
+}
+
+#method h2{
+    color: #00cc99;
+    text-align: center;
+}
+
+#method .subtitle{
+    color: #262626;
+}
+
+#method .blocs{
+    margin: 50px 0;
+}
+
+#method .bloc-1{
+    margin-top: 80px;
+}
+
+#method .bloc-3{
+    margin-top: 50px;
+}
+
+#method .blocs .content{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#method .blocs .content p{
+    margin-top: 30px;
+}
+
+#method .blocs .content span{
+    font-family: 'Circular Std Black';
+}
+
+#method .blocs .content .step{
+    color: #fff;
+    background-color: #ffce00;
+    border-radius: 50px;
+    padding: 15px 20px;
+}
+
 /* Agency */
 
 #agency{
@@ -291,7 +346,6 @@ header nav .nav-contact:hover{
 }
 
 #agency h2{
-    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-weight: 700;
 }
@@ -331,7 +385,6 @@ header nav .nav-contact:hover{
 
 #infos-customers h2{
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
 }
 
@@ -385,7 +438,6 @@ header nav .nav-contact:hover{
 }
 
 #price h2{
-    font-family: 'Ubuntu', sans-serif;
     color: #fff;
     font-weight: 700;
     font-size: 36px;
