@@ -28,6 +28,10 @@ a{
     text-decoration: none !important;
 }
 
+li{
+    list-style: none;
+}
+
 h2{
     font-family: 'Circular Std Black';
     color: #262626;
@@ -56,18 +60,19 @@ h2{
 }
 
 .btn-arrow{
-    width: 72px;
+    width: 60px;
     margin: 0 auto;
 }
 
 .btn-arrow a{
     position: absolute;
     bottom: -30px;
-    z-index: 1;
+    z-index: 2;
     animation: animate 2s infinite;
 }
 
 .btn-arrow img{
+    width: 60px;
     transform: rotate(-45deg);
 }
 
@@ -83,6 +88,29 @@ h2{
         opacity: 0;
         transform: rotate(45deg) translate(20px,20px);
     }
+}
+
+/* Semi Circle */
+
+#customers:after, #price:after, #infos-customers:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -78px;
+    transform: translateX(-50%);
+    width: 275px;
+    height: 80px;
+}
+
+#customers:after, #infos-customers:after{
+    background-image: url('img/semi-circle-grey.png');
+    z-index: 1;
+}
+
+#price:after {
+    background-image: url('img/semi-circle-green.png');
+    z-index: 1;
 }
 
 /* Header */
@@ -196,19 +224,6 @@ header nav .nav-contact:hover{
     background-color: #f6f5ef;
 }
 
-#customers:after{
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url('img/semi-circle-grey.png');
-    left: 50%;
-    bottom: -78px;
-    transform: translateX(-50%);
-    width: 275px;
-    height: 80px;
-    z-index: 0;
-}
-
 /* Bloc 1 */
 
 #bloc-1{
@@ -263,11 +278,74 @@ header nav .nav-contact:hover{
     margin-bottom: 30px;
 }
 
+/* Infos Customers */
+
+#infos-customers{
+    position: relative;
+    padding: 100px 0;
+    background-color: #f6f5ef;
+}
+
+#infos-customers:before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: -30px;
+    background-image: url('img/picto-lybra-2.png');
+    width: 257px;
+    height: 247px;
+    background-size: 257px 247px;
+}
+
+#infos-customers h2{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+#infos-customers h2, #infos-customers .subtitle{
+    color: #262626;
+}
+
+#infos-customers .subtitle + p{
+    font-family: 'Circular Std Bold';
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#infos-customers .list{
+    padding: 0 100px;
+}
+
+#infos-customers li{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#infos-customers li:before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -4px;
+    background-image: url('img/puce-green.png');
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+#infos-customers li span{
+    display: block;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
 /* Price */
 
 #price{
     color: #fff;
-    padding: 80px 0;
+    padding: 100px 0;
     background-color: #00cc99;
     position: relative;
     background-image: url('img/bg-price.png');
@@ -310,30 +388,19 @@ header nav .nav-contact:hover{
     bottom: -40px;
 }
 
+#price .title-list, #price .item, #price .item p.green{
+    font-family: 'Ubuntu', sans-serif; 
+}
+
 #price .title-list{
-    font-family: 'Ubuntu', sans-serif;
     color: #fff;
     font-weight: 700;
     font-size: 30px;
     margin: 50px 0 30px;
 }
 
-#price:after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url('img/semi-circle-green.png');
-    left: 50%;
-    bottom: -78px;
-    transform: translateX(-50%);
-    width: 275px;
-    height: 80px;
-    z-index: 0;
-}
-
 #price .item{
     padding: 50px;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     background-color: #fff;
     color: #262626;
@@ -343,7 +410,6 @@ header nav .nav-contact:hover{
 
 #price .item p.green{
     color: #00cc99;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -357,7 +423,6 @@ header nav .nav-contact:hover{
 }
 
 #price li{
-    list-style: none;
     font-size: 18px;
     margin-bottom: 20px;
 }
@@ -371,7 +436,7 @@ header nav .nav-contact:hover{
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    background-size: 20px 20px;
+    background-size: 20px;
 }
 
 /* Offer */
