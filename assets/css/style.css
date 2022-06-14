@@ -634,3 +634,15 @@ footer .phone a{
     top: 11px;
     letter-spacing: 2px;
 }
+
+.graph__wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-65%, -45%);
+}
+
+svg{
+    width: 100%;
+    height: 100%;
+}
