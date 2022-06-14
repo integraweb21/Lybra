@@ -92,7 +92,7 @@ h2{
 
 /* Semi Circle */
 
-#customers:after, #price:after, #infos-customers:after{
+#customers:after, #agency:after, #infos-customers:after, #price:after{
     content: "";
     display: block;
     position: absolute;
@@ -101,6 +101,11 @@ h2{
     transform: translateX(-50%);
     width: 275px;
     height: 80px;
+}
+
+#agency:after{
+    background-image: url('img/semi-circle-white.png');
+    z-index: 1;
 }
 
 #customers:after, #infos-customers:after{
@@ -278,6 +283,32 @@ header nav .nav-contact:hover{
     margin-bottom: 30px;
 }
 
+/* Agency */
+
+#agency{
+    position: relative;
+    padding: 100px 0;
+}
+
+#agency h2{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+#agency .subtitle{
+    color: #262626;
+}
+
+#agency .bloc img{
+    width: 45px;
+    margin-bottom: 30px;
+}
+
+#agency p span{
+    font-family: 'Circular Std Black';
+}
+
 /* Infos Customers */
 
 #infos-customers{
@@ -423,6 +454,7 @@ header nav .nav-contact:hover{
 }
 
 #price li{
+    position: relative;
     font-size: 18px;
     margin-bottom: 20px;
 }
@@ -430,13 +462,17 @@ header nav .nav-contact:hover{
 #price li:before{
     content: "";
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: 2px;
     background-image: url('img/puce.png');
-    margin-right: 10px;
     width: 20px;
     height: 20px;
     background-size: 20px;
+}
+
+#price li span{
+    display: block;
+    padding-left: 30px;
 }
 
 /* Offer */
