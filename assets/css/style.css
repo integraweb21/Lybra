@@ -249,6 +249,7 @@ header nav .nav-contact:hover{
 #reasons h2{
     text-align: center;
     color: #fff;
+    margin: 0 250px;
 }
 
 #reasons h2 span{
@@ -431,6 +432,10 @@ header nav .nav-contact:hover{
     padding: 0 100px;
 }
 
+#infos-customers ul{
+    padding-left: 0px;
+}
+
 #infos-customers li{
     position: relative;
     margin-bottom: 20px;
@@ -539,6 +544,10 @@ header nav .nav-contact:hover{
 
 #price .list{
     padding: 0 100px;
+}
+
+#price ul{
+    padding-left: 0px;
 }
 
 #price li{

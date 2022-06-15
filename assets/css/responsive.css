@@ -1,3 +1,13 @@
+@media all and (min-width: 992px) and (max-width: 1199px){
+
+    /* Reason */
+
+    #reasons h2{
+        margin: 0 150px;
+    }
+
+}
+
 /* Tablette */
 
 @media all and (min-width: 768px) and (max-width: 992px){
@@ -52,10 +62,192 @@
         box-shadow: none;
     }
 
+    /* Reason */
+
+    #reasons h2{
+        margin: 0px;
+    }
+
 }
 
 /* Mobile */
 
 @media screen and (max-width: 768px){
+
+    /* Mise en page */
+
+    h1{
+        font-size: 30px !important;
+    }
+
+    h1 .italic{
+        font-size: 34px !important;
+    }
+
+    h2{
+        font-size: 24px !important;
+        text-align: center;
+    }
+
+    .subtitle{
+        font-size: 18px;
+    }
+
+    /* Banner */
+
+    #banner h1 span.first-line:after, #banner h1 span.second-line:before{
+        display: none;
+    }
+
+    /* Reasons */
+
+    #reasons .bg{
+        background-image: none;
+        padding-bottom: 30px;
+    }
+
+    #reasons .item img{
+        width: 60px;
+    }
+
+    #reasons .item:first-child {
+        margin-bottom: 15px;
+    }
+
+    #reasons .right .txt{
+        text-align: center;
+    }
+    
+    /* Lybra */
+
+    #lybra .graph__wrapper{
+        display: none;
+    }
+
+    #lybra .line-2{
+        flex-direction: column-reverse;
+    }
+
+    #lybra .line-1 p, #lybra .line-2 p, #lybra .line-3 p{
+        position: inherit;
+        top: auto;
+        transform: none;
+    }
+
+    #lybra .left img, #lybra .right img{
+        width: 200px;
+    }
+
+    /* Method */
+
+    #method{
+        padding: 100px 0;
+    }
+
+    #method .bloc-1, #method .bloc-3{
+        margin-top: 0px;
+    }
+
+    #method .bloc-2{
+        margin: 15px 0;
+    }
+
+    /* Agency */
+
+    #agency{
+        padding-bottom: 50px;
+    }
+
+    /* Infos Customers */
+
+    #infos-customers{
+        padding-bottom: 50px;
+    }
+
+    #infos-customers .list{
+        padding: 0px;
+    }
+
+    #infos-customers:before{
+        display: none;
+    }
+
+    #infos-customers li span{
+        font-size: 16px;
+        padding-left: 35px;
+    }
+
+    #infos-customers li:before{
+        top: -2px;
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+
+    /* Price */
+
+    #price{
+        padding-bottom: 50px;
+    }
+
+    #price li{
+        font-size: 16px;
+    }
+
+    #price .left:after, #price .right:after{
+        display: none;
+    }
+
+    #price .right{
+        margin-top: 15px;
+    }
+
+    #price .list{
+        padding: 0px;
+    }
+
+    #price .title-list{
+        font-size: 24px;
+    }
+
+    /* Offer */
+
+    #offer .container{
+        padding-bottom: 50px;
+    }
+
+    #offer h2{
+        font-size: 40px !important;
+    }
+
+    #offer h2 .second-line{
+        font-size: 44px;
+    }
+
+    #offer h2:before, #offer h2:after, #offer span.first-line:after, #offer span.second-line:before{
+        display: none;
+    }
+    
+    #offer .bulle{
+        text-align: center;
+        transform: none;
+    }
+
+    #offer .bulle p{
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+    }
+
+    /* Footer */
+
+    footer .container{
+        display: block;
+        text-align: center;
+    }
+
+    footer .phone{
+        margin-bottom: 30px;
+    }
 
 }
