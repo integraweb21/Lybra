@@ -98,7 +98,7 @@ h2{
     display: block;
     position: absolute;
     left: 50%;
-    bottom: -78px;
+    bottom: -75px;
     transform: translateX(-50%);
     width: 275px;
     height: 80px;
@@ -511,12 +511,20 @@ header nav .nav-contact:hover{
 }
 
 #price .item{
+    position: relative;
+    height: 100%;
     padding: 50px;
     font-size: 20px;
     background-color: #fff;
     color: #262626;
     border-radius: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#price .item .content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #price .item p.green{
@@ -646,3 +654,4 @@ svg{
     width: 100%;
     height: 100%;
 }
+

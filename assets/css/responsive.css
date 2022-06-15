@@ -1,0 +1,61 @@
+/* Tablette */
+
+@media all and (min-width: 768px) and (max-width: 992px){
+
+    /* Mise en page */
+
+    h1{
+        font-size: 46px !important;
+    }
+
+    h2{
+        font-size: 30px !important;
+    }
+
+    /* Lybra */
+
+    #lybra .line-1, #lybra .line-2, #lybra .line-3{
+        margin: 0px;
+    }
+
+    /* Méthode */
+
+    #method .bloc-1{
+        margin-top: 0px;
+    }
+
+    #method .bloc-2, #method .bloc-3{
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+
+    /* Header */
+
+    header{
+        display: block;
+        padding: 30px 0 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header .logo{
+        text-align: center;
+    }
+
+    header .navbar-toggler{
+        border: none;
+    }
+
+    header .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px){
+
+}
