@@ -62,6 +62,17 @@
         box-shadow: none;
     }
 
+    header .navbar-nav{
+        padding-top: 15px;
+    }
+
+    header nav .nav-contact{
+        color: #00cc99;
+        padding: 10px 0 !important;
+        background-color: transparent;
+        border: none;
+    }
+
     /* Reason */
 
     #reasons h2{
@@ -91,6 +102,11 @@
 
     .subtitle{
         font-size: 18px;
+    }
+
+    .btn-yellow{
+        display: block;
+        padding: 10px;
     }
 
     /* Banner */
@@ -213,7 +229,7 @@
     /* Offer */
 
     #offer .container{
-        padding-bottom: 50px;
+        padding: 100px 15px 50px;
     }
 
     #offer h2{
