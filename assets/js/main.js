@@ -18,4 +18,11 @@ $(document).ready(function() {
   
   }
 
+  /* ===============================  parallaxie  =============================== */
+
+  $('.parallaxie').parallaxie({
+    speed: 0.2,
+    size: "cover"
+  });
+
 });
